@@ -1,7 +1,7 @@
 package org.example.poo.TpClassHeritageInterface;
 
 public class Salarie {
-    static int compteur;
+    private static int compteur = 0;
     public String nom;
     protected int matricule;
     protected String categorie;
@@ -21,7 +21,7 @@ public class Salarie {
     }
     public void calculerSalaire(){};
 
-    public int getCompteur() {
+    static int getCompteur() {
         return compteur;
     }
 
