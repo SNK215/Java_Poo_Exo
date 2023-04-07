@@ -26,7 +26,7 @@ public class BookService {
         System.out.println("Livres publiés après "+yearFromInclusively);
         for (Livre l:
                 livres) {
-            if (l.anneePublication > yearFromInclusively){
+            if (l.anneePublication >= yearFromInclusively){
                 System.out.println(l.nom);
             }
         }
